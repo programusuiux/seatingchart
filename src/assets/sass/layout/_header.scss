@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.fs-dialog-container-95{
+    min-width :95vw !important;
+    min-height: 80vh;
+    .fs-modal-header {
+        width: 96% !important;
+    }
+}
+.width80{
+    .fs-modal-header{
+        width: 80% !important;
+    }
+}
+.width60{
+    .fs-modal-header{
+        width: 60% !important;
+    }
+}
+.width40{
+    .fs-modal-header{
+        width: 40% !important;
+    }
+}
+.width95 {
+    .fs-modal-header{
+        width: 95% !important;
+    }
+}

@@ -1,0 +1,627 @@
+﻿@import "../abstract/variables-new";
+
+
+
+//Font Family.........................................
+
+@mixin typo-preferred-font($usePreferred: true) {
+  @if $usePreferred {
+    font-family: $font-poppins;
+  }
+}
+
+
+//Heading 1.........................................
+
+@mixin typo-heading-1($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 2rem;
+  font-weight: $sc-font-w-medium;
+  line-height: 2rem;
+  // letter-spacing: 0.05em;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+}
+
+
+//Heading 1-small.........................................
+
+@mixin typo-heading-1-small($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 1.875rem;
+  font-weight: $sc-font-w-medium;
+  line-height: 1.5;
+  // letter-spacing: 0.05em;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+}
+
+
+
+
+
+//Heading 2.........................................
+
+@mixin typo-heading-2($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 1.5rem;
+  font-weight: $sc-font-w-medium;
+  line-height: 1.5rem;
+  // letter-spacing: 0.05em;
+      word-spacing: 0.2rem;
+      -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+}
+
+
+//Heading 3.........................................
+
+@mixin typo-heading-3($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 1.25rem;
+  font-weight: $sc-font-w-medium;
+  line-height: 1.25rem;
+  // letter-spacing: 0.05em;
+      word-spacing: 0.2rem;
+      -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+}
+
+
+//Heading 3 Small.........................................
+
+@mixin typo-heading-3_small($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 1.125rem;
+  font-weight: $sc-font-w-medium;
+  line-height: 1.125rem;
+  // letter-spacing: 0.05em;
+      // word-spacing: 0.2rem;
+      -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+}
+
+
+
+//Heading 4.........................................
+
+@mixin typo-heading-4($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 1rem;
+  font-weight:  $sc-font-w-medium;
+  line-height: 1rem;
+  // letter-spacing: 0.05em;
+      word-spacing: 0.2rem;
+      -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+}
+
+@mixin typo-heading-5($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 1rem;
+  font-weight:  $sc-font-w-semi-bold;
+  line-height: 1rem;
+  // letter-spacing: 0.05em;
+      word-spacing: 0.2rem;
+      -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+}
+
+
+//Body 1.........................................
+
+@mixin typo-body-1($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 0.875rem;
+  font-weight: $sc-font-w-regular;
+  /*line-height: 0.875rem;*/
+  // letter-spacing: 0.05em;
+      // word-spacing: 0.2rem;
+      -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+}
+
+
+//Body 1 Small.........................................
+
+@mixin typo-body-1_small($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 0.8125rem;
+  font-weight:  $sc-font-w-regular;
+  line-height: 0.8125rem;
+  // letter-spacing: 0.05em;
+      // word-spacing: 0.2rem;
+      -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+}
+
+
+//Body 2.........................................
+
+@mixin typo-body-2($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 0.875rem;
+  font-weight: $sc-font-w-medium;
+  /*line-height: 0.875rem;*/
+  // letter-spacing: 0.05em;
+      // word-spacing: 0.2rem;
+      -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+}
+
+
+//Body 2 Small.........................................
+
+@mixin typo-body-2_small($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 0.8125rem;
+  font-weight: $sc-font-w-medium;
+  line-height: 0.8125rem;
+  // letter-spacing: 0.05em;
+      // word-spacing: 0.2rem;
+      -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+}
+
+
+//Body 3 .........................................
+
+@mixin typo-body-3($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 0.875rem;
+  font-weight: $sc-font-w-semi-bold;
+  line-height: 0.875rem;
+  // letter-spacing: 0.05em;
+      // word-spacing: 0.2rem;
+      -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+}
+
+
+//Subtitle 1.........................................
+
+@mixin typo-subtitle-1($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 0.75rem;
+  font-weight: $sc-font-w-regular;
+  /*line-height: 0.75rem;*/
+  // letter-spacing: 0.05em;
+  //     word-spacing: 0.2rem;
+      -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+}
+
+
+//Subtitle 1 Small.........................................
+
+@mixin typo-subtitle-1_small($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 0.6875rem;
+  font-weight: $sc-font-w-regular;
+  /*line-height: 0.6875rem;*/
+  // letter-spacing: 0.05em;
+  //     word-spacing: 0.2rem;
+      -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+}
+
+
+//Subtitle 2.........................................
+
+@mixin typo-subtitle-2($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 0.75rem !important;
+  font-weight:$sc-font-w-medium !important;
+  /*line-height: 0.75rem;*/
+  // letter-spacing: 0.05em !important;
+  //     word-spacing: 0.2rem !important;
+      -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+}
+
+
+//Subtitle 2 Small.........................................
+
+@mixin typo-subtitle-2_small($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 0.6875rem;
+  font-weight: $sc-font-w-medium;
+  /*line-height: 0.6875rem;*/
+  // letter-spacing: 0.05em;
+  //     word-spacing: 0.2rem;
+      -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+
+}
+
+
+//Subtitle 3.........................................
+
+@mixin typo-subtitle-3($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 0.75rem;
+  font-weight: $sc-font-w-semi-bold;
+  /*line-height: 0.75rem;*/
+  // letter-spacing: 0.05em;
+  //     word-spacing: 0.2rem;
+      -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+}
+
+
+//Subtitle 3 Small.........................................
+
+@mixin typo-subtitle-3_small($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 0.6875rem;
+  font-weight: $sc-font-w-semi-bold;
+  /*line-height: 0.6875rem;*/
+  // letter-spacing: 0.05em;
+  //     word-spacing: 0.2rem;
+      -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+
+}
+
+
+//Paragraph 1.........................................
+
+@mixin typo-para($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  /*font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.02em; */
+ 
+  line-height: 1.25rem;
+  text-align:justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+
+}
+
+
+//Text Caption.........................................
+
+@mixin typo-caption($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 0.625rem;
+  font-weight: $sc-font-w-medium;
+  line-height: 0.625rem;
+  letter-spacing: 0.05em;
+      word-spacing: 0.2rem;
+      -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+}
+
+
+//Blockquote.........................................
+
+@mixin typo-blockquote($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  position: relative;
+  font-size: 24px;
+  font-weight: $sc-font-w-light;
+  font-style: italic;
+  line-height: 1.35;
+  letter-spacing: 0.08em;
+
+  &:before {
+    position: absolute;
+    left: -0.5em;
+    content: '“';
+  }
+
+  &:after {
+    content: '”';
+    margin-left: -0.05em;
+  }
+
+  @if $colorContrast {
+    opacity: 0.54;
+  }
+}
+
+
+//Button Text.........................................
+
+@mixin typo-button($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 0.8125rem;
+  font-weight: $sc-font-w-medium;
+  text-transform: uppercase;
+  line-height: 0.8125rem;
+  letter-spacing: 0;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+}
+
+
+//Button Text Small.........................................
+
+@mixin typo-button_small($colorContrast: false, $usePreferred: true) {
+  @include typo-preferred-font($usePreferred);
+  font-size: 0.75rem;
+  font-weight: $sc-font-w-medium;
+  text-transform: uppercase;
+  line-height:  0.75rem;
+  letter-spacing: 0;
+
+  @if $colorContrast {
+    opacity: 0.87;
+  }
+}
+
+
+//Link Primary.........................................
+
+@mixin link-primary{
+    /*font-size: 0.875rem;
+    letter-spacing: 0.15rem;
+    line-height: 1.25rem;
+    word-spacing: 0.2rem;*/
+    color: #2196F3;
+    font-weight:$sc-font-w-regular;
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+
+//Link Secondary.........................................
+
+@mixin link-secondary{
+    /*font-size: 0.875rem;
+    letter-spacing: 0.15rem;
+    line-height: 1.25rem;
+    word-spacing: 0.2rem;*/
+    color: #2196F3;
+    font-weight:$sc-font-w-regular;
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+
+//Mat Icon.........................................
+
+@mixin typo-icon() {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  word-wrap: normal;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+
+//Mat Icon Small.........................................
+
+@mixin typo-icon_small() {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  word-wrap: normal;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+
+//Status Text.........................................
+
+@mixin status-text{
+    font-size: 0.625rem;
+    letter-spacing: 0.15rem;
+    line-height: 1.25rem;
+    word-spacing: 0.2rem;
+    font-weight:$sc-font-w-medium;
+    text-transform:uppercase;
+}
+
+
+//Status Chip.........................................
+
+@mixin status-chip{
+    font-size: 0.625rem;
+    letter-spacing: 0.15rem;
+    line-height: 1.25rem;
+    word-spacing: 0.2rem;
+    font-weight:$sc-font-w-medium;
+    text-transform:uppercase;
+}
+
+//Box Shadow.........................................
+
+@mixin box_shadow ($level) {
+
+  @if $level == 1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  } @else if $level == 2 {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  } @else if $level == 3 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  } @else if $level == 4 {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  } @else if $level == 5 {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  }
+
+}
+
+//Border radius.........................................
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius !important;
+  -moz-border-radius: $radius !important;
+  -ms-border-radius: $radius !important;
+  border-radius: $radius !important;
+}
+
+
+//Button .........................................
+
+@mixin sc-btn{
+        cursor: pointer;
+        text-align: center;
+        justify-content:center;
+        align-items:center !important;
+        text-transform: uppercase;
+        transition: 0.3s !important;
+        height: 40px;
+        width: auto;
+        min-width: 88px;
+        margin: 0px 5px;
+
+        &:hover {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            }
+}
+
+@mixin sc-btn--small{
+        @include sc-btn;
+        height: 36px !important;
+        /*font-size: 13px !important;*/
+}
+
+
+
+
+
+@mixin sc-btn-gradient {
+    outline-style: none;
+    height: 60px;
+    width: 281px;
+    background-color: #2388f0;
+    border-radius: 30px;
+}
+
+
+@mixin sc-btn-icon {
+    background-color:$sc_btn-icon-bg-color;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    min-width: 96px;
+    width: auto;
+    line-height: 1rem;
+    font-size: 0.625rem;
+    justify-content: center;
+    border: 1px dotted #707070;
+    border-radius: 5px;
+
+    &:hover {
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+                color: $sc_icon-btn-text-color !important;
+            }
+}
+
+
+@mixin sc-btn-icon--xl{
+    @include sc-btn-icon;
+    height:55px;
+}
+
+
+@mixin sc-btn-icon--small{
+    @include sc-btn-icon;
+    height:36px;
+}
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+@import "colors";
+
+//Typography................................
+$font-family-sans-serif: "Roboto", "Helvetica", "Arial", sans-serif !default;
+$font-family-serif: "Roboto Slab", "Times New Roman", serif !default;
+$font-family-rubik: "Rubik", sans-serif;
+$preferred_font: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
+$performance_font: 'Helvetica', 'Arial', sans-serif !default;
+
+$prefix: "sc_";
+
+//Optimo theme and color codes .....................
+$sc_color_primary-blue: #039BE5 !default;
+$sc_color_primary-red: #f44336 !default;
+$sc_color_primary-green: #009688 !default;
+
+$sc_color_secondary-green: #8BC34A !default;
+$sc_color_secondary-blue: #03a9f4 !default;
+$sc_color_secondary-gray: #9E9E9E !default;
+
+$sc_color_white: #fff !default;
+$sc_color_black: #000 !default;
+
+$sc_color_tertiary: #f5c70e !default;
+$sc_color_quaternary: #333e47;
+
+$sc_icon-white: $green-50;
+$sc_icon-light: #f0f6fa !default;
+$sc_icon-dark: #b8bcbf !default;
+$sc_icon-darker: #a7aaaf !default;
+$sc_icon-black: #3b414d !default;
+
+//Text colours..............................................
+$sc_text-color__primary: $grey-900 !default;
+$sc_text-color__secondary: $blue-grey-700 !default;
+$sc_text-color__tertiary: $grey-700;
+$sc_text-color__quaternary: $grey-500;
+$sc_text-color__light: $grey-50;
+
+//Link Colours..............................................
+$sc_link-color__primary: $blue-500;
+$sc_link-color__secondary: #27bfc2 !default;
+$sc_link-color: #535353 !default;
+
+//Border line color.........................................
+$sc_border-color: #e0e0e0 !default;
+$sc_border-color_light: #d9d9d9 !default;
+$sc_border-color_darker: #ababab !default;
+$sc_border-color_darkest: #77818a !default;
+$sc_border-color_lighter: #b7b7b7 !default;
+
+//button colors..............
+$sc_btn-default: #91a0ad !default;
+$sc_btn-disable: #91a0ad !default;
+$sc_btn-success: #333 !default;
+$sc_btn-warning: #333 !default;
+
+//state colors..............
+$no-color--state: #f5766c !default;
+$active-color--state: $green-700 !default;
+$mute-color--state: $grey-700 !default;
+$firm-color--state: $blue-700 !default;
+$alert-color--state: $yellow-700 !default;
+$definite-color--state: $blue-grey-700 !default;
+$quote-color--state: $brown-700 !default;
+$success-color--state: #27bfc2 !default;
+$cancelled-status: #0000;
+$red-danger: $no-color--state;
+$success_action: #69f0ae !default;
+$success_action_new: #1ce884 !default;
+$refund_status: #fbd46b !default;
+$refund_status_darker: #ffb200 !default;
+
+//status colors..............
+$overdue-status:$red-500;
+$pending-status:$orange-500;
+$completed-status:$teal-500;
+$cancelled-status:$blue-grey-500;
+$expired-status:$blue-grey-500;
+

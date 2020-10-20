@@ -1,0 +1,596 @@
+@import "../abstract/_mixins.scss";
+
+
+$base-text-color: #000;
+$color-base: $base-text-color;
+
+
+$light: lighten($color-base,60%);
+$dark: darken($color-base,15%);
+
+
+$lighter: lighten($color-base,30%);
+$darker: darken($color-base,30%);
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+html,
+body {
+  font-family: "Roboto", sans-serif !important;
+  color:$sc_text-color__primary;
+}
+
+// circle-icon defalt colors.....................................
+$ci-bg--color :#eee !default;
+$ci-col-hover:#eee !default;
+$background-item:#fff;
+
+// state text  colors ...........................................
+.sc_txt__primary {
+  color: $sc_text-color__primary !important;
+}
+.sc_txt__secondary {
+  color: $sc_text-color__secondary !important;
+}
+.sc_txt__tertiary {
+  color: $sc_text-color__tertiary !important;
+}
+.sc_txt__quaternary {
+  color: $sc_text-color__quaternary !important;
+}
+
+
+//State link colors...........................................
+.sc_link--primary{
+  @include typo-body-1();
+  font-style: normal;
+  line-height: 1.5;
+  text-decoration: underline;
+  color: $sc_link-color__primary;
+  cursor: pointer;
+
+  &.__bold{
+    font-weight: 500;
+  }
+
+  &:hover{
+    color: darken($sc_link-color__primary,30%);
+  }
+}
+
+
+
+.sc_link--secondary{
+  @include typo-body-1();
+  font-style: normal;
+  line-height: 1.5;
+  text-decoration: underline;
+  color: $sc_link-color__secondary;
+
+  &.__bold{
+    font-weight: 500;
+  }
+
+  &:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: $sc_link-color__secondary;
+  }
+}
+
+
+// state background colors ...........................................
+
+
+.no-color__state_background{
+ background-color:$no-color--state  !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+.active-color--state_background{
+  background-color:$active-color--state  !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+.mute-color--state_background{
+  background-color:$mute-color--state  !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+.firm-color--state_background{
+  background-color:$firm-color--state !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+.alert-color--state_background{
+  background-color:$alert-color--state !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+.definite-color--state_background{
+  background-color:$definite-color--state !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+.quote-color--state_background{
+  background-color:$quote-color--state !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+.mat-icon-button{
+    -webkit-tap-highlight-color:unset !important;
+}
+
+
+// state icons and fonts  colors ...........................................
+.no-color--state{
+  color:$no-color--state !important;
+  i,p,&.chip span,span{
+    color:$no-color--state !important;
+  }
+}
+.active-color--state{
+  color:$active-color--state !important;
+  i,p,&.chip span,span{
+    color:$active-color--state !important;
+  }
+}
+.mute-color--state{
+  color:$mute-color--state !important;
+  i,p,&.chip span,span{
+    color:$mute-color--state !important;
+  }
+}
+.firm-color--state{
+  color:$firm-color--state !important;
+  i,p,&.chip span,span{
+    color:$firm-color--state !important;
+  }
+}
+.alert-color--state{
+  color:$alert-color--state !important;
+  i,p,&.chip span,span{
+    color:$alert-color--state !important;
+  }
+}
+.definite-color--state{
+  color:$definite-color--state !important;
+  i,p,&.chip span,span{
+    color:$definite-color--state !important;
+  }
+}
+
+.quote-color--state{
+  background-color:$quote-color--state !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+%tc-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sc_txt__underline{
+  text-decoration: underline;
+}
+.sc_txt__line-through{
+  text-decoration: line-through;
+}
+.sc_txt__line-overline{
+  text-decoration: overline;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.sc_txt__white-space-normal{
+  overflow-wrap: inherit;
+  white-space: normal;
+ font-size:12px;
+}
+
+.sc_txt{
+  &__light {
+    color: $light; //black 60%
+  }
+  &__dark {
+    color: $dark; //black
+  }
+  &__lighter {
+    color: $lighter;
+  }
+  &__darker {
+    color: $darker;
+  }
+  &__align-right {
+   text-align: right;
+  }
+  &__align-left {
+    text-align: left !important;
+   }
+  &__right{
+        text-align: right;
+  }
+  &__left{
+    text-align: left;
+  }
+
+  &__center{
+    text-align: center;
+  }
+
+
+}
+
+fieldset.demo{
+  background-color: #fff;
+  legend{
+    background-color: #eee;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  margin-bottom: 20px;
+
+}
+
+    h1, h2, h3, h4, h5, h6, p {
+      margin: 0;
+      padding: 0;
+    }
+
+     h1.sc_heading__1 small,   h2.sc_heading__2 small, h3.sc_heading__3 small, h4.sc_heading__4 small,   h5.sc_heading__5 small, h6.sc_heading__6 small {
+      @include typo-display-3($colorContrast: false);
+      font-size: 0.6em;
+    }
+
+  h1.sc_heading__1 {
+  @include typo-display-3;
+    margin-top: 0;
+    margin-bottom: 0;
+    @extend %tc-ellipsis;
+  }
+
+  h2.sc_heading__2 {
+    @include typo-display-2;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h3.sc_heading__3 {
+    @include typo-display-1;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  
+  h4.sc_heading__4 {
+    @include typo-display-0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .sc_subtitle__1 {
+    @include typo-headline;
+    font-size: 14px ;
+    line-height: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+
+    &--small{
+      @include typo-headline;
+      font-size: 12px ;
+      line-height: 12px;
+
+    }
+    &--large{
+      @include typo-headline;
+      font-size: 16px ;
+      line-height: 16px;
+    }
+  }
+
+  .sc_subtitle__2 {
+    @include typo-title;
+    font-size: 16px;
+    line-height: 16px;
+
+
+    &--small{
+      @include typo-title;
+      font-size: 14px ;
+      line-height: 14px;
+    }
+
+    &--large{
+      @include typo-title;
+      font-size: 18px ;
+      line-height: 18px;
+    }
+    &--blue{
+        @include typo-title;
+        font-size: 13px;
+        color: $sc_link-color__secondary !important;
+        line-height: 30px !important;
+
+    }
+  }
+
+p {
+    @include typo-body-1;
+    margin-bottom: 16px;
+  }
+
+.lead{
+  @include typo-title;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.sc_txt__caption{
+  @include typo-caption;
+  font-style: normal;
+  color: #909cac;
+}
+.sc_txt__link{
+  @include typo-caption;
+  font-style: normal;
+  line-height: 16px;
+  color: #2196F3;
+  text-decoration: underline;
+  cursor:pointer;
+}
+
+
+.sc_txt__body2{
+  @include typo-body-2;
+  @extend %tc-ellipsis;
+  line-height: 1.5;
+
+  &--small{
+    @include typo-body-2;
+    @extend %tc-ellipsis;
+    font-size: 12px !important;
+  }
+
+  &--large{
+    @include typo-body-2;
+    @extend %tc-ellipsis;
+    font-size: 14px;
+  }
+}
+
+.sc_txt__body1{
+  @include typo-body-1;
+  @extend %tc-ellipsis;
+
+  &--small{
+    font-size: 12px;
+    @extend %tc-ellipsis;
+  }
+
+  &--large{
+    font-size: 14px;
+    @extend %tc-ellipsis;
+  }
+}
+
+
+.tc-subheading {
+      @include typo-subhead;
+      @extend %tc-ellipsis;
+    }
+
+
+.my-bordered-list {
+  /* remove the side padding. we'll be placing it around the item instead. */
+  padding-right: 0;
+  padding-left: 0;
+}
+.my-bordered-list .mdc-list-item {
+  /* Add the list side padding padding to the list item. */
+  padding: 0 16px;
+  /* Add a border around each element. */
+  border: 1px solid rgba(0, 0, 0, .12);
+}
+/* Ensure adjacent borders don't collide with one another. */
+.my-bordered-list .mdc-list-item:not(:first-child) {
+  border-top: none;
+}
+
+//Font Weight
+.sc_fontweight{
+  &--normal{
+    font-weight: 400 !important;
+  }
+
+  &--medium{
+    font-weight: 500 !important;
+  }
+
+  &--bold{
+    font-weight: 600 !important;
+  }
+}
+
+
+//flex properties
+.sc_flex__direction {
+
+    &--col {
+        flex-direction: column;
+        display: flex;
+    }
+
+    &--row {
+        flex-direction: row;
+        display: flex;
+    }
+}
+
+.sc_flex__stretch{
+    align-items: stretch !important;
+}
+
+
+.sc_justify__content {
+    &--end {
+        justify-content: flex-end;
+    }
+
+    &--center {
+        justify-content: center !important;
+    }
+
+    &--space-between {
+        justify-content: space-between !important;
+    }
+
+    &--space-around {
+        justify-content: space-around !important;
+    }
+}
+
+
+.sc_inline__icon{
+    font-size:16px;
+    color:$sc_text-color__secondary;
+    line-height:21px;
+    margin:0 5px;
+}
+.sc_badge{
+    border: 1px solid $red-50;
+    border-radius:10px;
+    color:$sc_color_white;
+    padding:0 11px;
+    font-size:11px;
+    font-weight:400;
+    line-height:17px;
+    &--default{
+        @extend .sc_badge;
+        color:$sc_color_black;
+        background-color:$sc_color_secondary-green;
+    }
+    &--green{
+        @extend .sc_badge;
+        background-color:$completed;
+    }
+    &--yellow{
+        @extend .sc_badge;
+        background-color:#FFC107;
+    }
+    &--red{
+        @extend .sc_badge;
+        background-color:$not_completed;
+    }
+}
+.sc_section {
+    &__icon {
+        background-color: $not_completed;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        margin: 0 8px 0px 0px;
+        &--action {
+            display: flex;
+            align-items: center;
+            margin-right: 5px;
+            color:$sc_text-color__secondary;
+            /*i {
+                margin: 0 5px;
+            }*/
+        }
+        &--small{
+            @extend .sc_section__icon;
+            height: 40px !important;
+            width: 40px !important;
+            /*margin-right:5px;*/
+        }
+    }
+    &__title {
+        margin-left: 5px;
+    }
+}
+
+
+
+//time
+ .sc_time{
+    border-left: 0.1rem solid $sc_border-color_darker;
+    margin-left: 0.5rem;
+    padding-left: 0.5rem;
+
+}
+
+
+ //chip
+ .sc_chip {
+  background: $sc_color_secondary-green;
+  border: 0.1rem solid $sc_color_secondary-green;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  
+}
+
+ //clickable
+ .sc_hand{
+     cursor: pointer;
+ }
+
+ //underline
+ .sc_underline{
+     text-decoration:underline;
+ }
+
+
+ //Row
+
+ .sc_panel-container__row{
+     min-height:55px;
+     margin: 0 16px;
+ }
+
+ //Margin
+
+ .mb3{
+     margin-bottom:3px;
+ }
+
+ .mb5{
+     margin-bottom:5px;
+ }
+
+ .mt3{
+     margin-top:3px;
+ }
+
+  .mt5{
+     margin-top:5px;
+ }
+
+ .ml3{
+     margin-left:3px;
+ }
+
+ .ml5{
+     margin-left:5px;
+ }
+
+ .mr3{
+     margin-right:3px;
+ }
+
+  .mr5{
+     margin-right:5px;
+ }

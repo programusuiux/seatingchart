@@ -1,0 +1,81 @@
+
+//Event category card
+
+.sc_event-category--card{
+    height: 347px;
+    width: 100%;
+    background-color: #f5f5f5;
+    @include box_shadow (1);
+
+    .sc_card{
+        &-header-wrapper{
+            background-color: #FCE300;
+            height: 48px;
+            max-height: 48px;
+            padding-left: 16px;
+        }
+
+        &-body-wrapper{
+            overflow: hidden;
+            transition: all 0.5s ease;
+            // background-color: #F43300;
+            // background-image: url("~src/assets/image/1 (1).PNG");
+
+            // height: 240px;
+
+            .sc_card-body{
+                height: 100%;
+                // background-image: url("~src/assets/image/1 (1).PNG");
+                >img{
+                    width: 100%;
+                    height: 100%;
+                    // transition: transform .2s; /* Animation */
+                    object-fit: cover;
+                    background-size: cover;
+                    background-position: center center;
+                    overflow: hidden;
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+
+        &-footer-wrapper{
+            background-color:#F7F7F7;
+            border: 1px solid #EEEEEE;
+            height: 120px;
+            max-height: 120px;
+            padding: 16px;
+
+            .sc_card-footer{
+                .footer-content{
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2; /* number of lines to show */
+                    -webkit-box-orient: vertical;
+                    margin-bottom: 12px;
+                }
+
+                >button{
+                    float: right;
+
+                    @include media-breakpoint-down(sm) { width: 100% }
+                    // @include media-breakpoint-down(md) { width: 100% }
+                    // @include media-breakpoint-down(lg) { width: 100% }
+                    // @include media-breakpoint-down(xl) { width: 100% }
+                }
+            }
+        }
+    }
+}
+
+.sc_event-category--card:hover{
+    @include box_shadow (3);
+
+    .sc_card-body{
+        >img{
+            transform: scale(1.2);
+        }
+    }
+
+}

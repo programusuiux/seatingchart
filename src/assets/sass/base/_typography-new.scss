@@ -1,0 +1,388 @@
+﻿@import "../abstract/mixins-new";
+@import "../abstract/variables-new";
+
+//Text Classes
+
+%tc-ellipsis{
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.wider-text{
+white-space: normal !important;
+    max-width: 220px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sc-txt-h1{
+    @include typo-heading-1;
+    /*@extend %tc-ellipsis;*/
+}
+
+.sc-txt-h1-small{
+    @include typo-heading-1-small;
+    /*@extend %tc-ellipsis;*/
+}
+
+.sc-txt-h2{
+    @include typo-heading-2;
+    /*@extend %tc-ellipsis;*/
+}
+
+
+.sc-txt-h3{
+    @include typo-heading-3;
+    /*@extend %tc-ellipsis;*/
+}
+
+.sc-txt-h3_small{
+    @include typo-heading-3_small;
+    /*@extend %tc-ellipsis;*/
+
+    &--link{
+        @include typo-heading-3_small;
+        cursor:pointer !important;
+       -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+         &:hover{
+            text-decoration:underline !important;
+            color:$sc-text-color__quinary !important;
+        }
+       
+       
+    }
+}
+
+.sc-txt-h4{
+    @include typo-heading-4;
+    /*@extend %tc-ellipsis;*/
+}
+
+.sc-txt-h5{
+    @include typo-heading-5;
+    /*@extend %tc-ellipsis;*/
+}
+
+
+.sc-txt-b1{
+    @include typo-body-1;
+    /*@extend %tc-ellipsis;*/
+
+}
+
+.sc-txt-b1_small{
+    @include typo-body-1_small;
+    /*@extend %tc-ellipsis;*/
+}
+
+
+.sc-txt-b2{
+    @include typo-body-2;
+    /*@extend %tc-ellipsis;*/
+     &.link{
+          text-decoration:underline !important;
+        cursor:pointer !important;
+       -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+         &:hover{
+            color:$sc-text-color__quaternary !important;
+        }
+    }
+
+     &.link2{
+          /*text-decoration:underline !important;*/
+        cursor:pointer !important;
+       -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+         &:hover{
+            color:$sc-text-color__quaternary !important;
+        }
+    }
+}
+
+.link-txt{
+        cursor:pointer !important;
+       -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+         &:hover{
+            text-decoration:underline !important;
+            color:$sc-text-color__quinary !important;
+        }
+}
+
+.link-icon{
+    cursor:pointer !important;
+   -webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+     &:hover{
+        // text-decoration:underline !important;
+        color:$sc-text-color__quinary !important;
+    }
+}
+
+.sc-txt-b2_small{
+    @include typo-body-2_small;
+    /*@extend %tc-ellipsis;*/
+}
+
+.sc-txt-b3{
+    @include typo-body-3;
+    /*@extend %tc-ellipsis;*/
+}
+
+.sc-txt-s1{
+    @include typo-subtitle-1;
+    /*@extend %tc-ellipsis;*/
+    
+}
+
+.sc-txt-s1_small{
+    @include typo-subtitle-1_small;
+    /*@extend %tc-ellipsis;*/
+}
+
+.sc-txt-s2{
+    @include typo-subtitle-2;
+    /*@extend %tc-ellipsis;*/
+}
+
+.sc-txt-s2_small{
+    @include typo-subtitle-2_small;
+    /*@extend %tc-ellipsis;*/
+}
+
+
+.sc-txt-s3{
+    @include typo-subtitle-3;
+    /*@extend %tc-ellipsis;*/
+}
+
+.sc-txt-s3_small{
+    @include typo-subtitle-3_small;
+    @extend %tc-ellipsis;
+}
+
+.sc-txt-cap{
+    @include typo-caption;
+    @extend %tc-ellipsis;
+}
+
+
+.sc-txt-p{
+    @include typo-para;
+    
+}
+
+
+//Text Colour Classes
+
+.sc-text-color{
+    color:$sc-text-color;
+    
+}
+
+.sc-text-color__primary{
+    color:$sc-text-color__primary;
+}
+
+.sc-text-color__secondary{
+    color:$sc-text-color__secondary;
+}
+
+.sc-text-color__tertiary{
+    color:$sc-text-color__tertiary;
+}
+
+.sc-text-color__quaternary{
+    color:$sc-text-color__quaternary;
+}
+
+.sc-text-color__quinary{
+    color:$sc-text-color__quinary;
+}
+
+.sc-text-color__senary{
+    color:$sc-text-color__senary;
+}
+
+.sc-text-color__special{
+    color:$sc-text-color__special;
+}
+
+
+//Font Weight
+
+.sc-text-light{
+    font-weight:$sc-font-w-light;
+}
+
+.sc-text-regular{
+    font-weight:$sc-font-w-regular;
+}
+
+.sc-text-medium{
+    font-weight:$sc-font-w-medium;
+}
+
+.sc-text-semi-bold{
+    font-weight:$sc-font-w-semi-bold;
+}
+
+.sc-text-bold{
+    font-weight:$sc-font-w-bold;
+}
+
+.sc-text-extra-bold{
+    font-weight:$sc-font-w-extra-bold;
+}
+
+.sc-text-black{
+    font-weight:$sc-font-w-black;
+}
+
+
+//Text Transform
+
+.sc-text-trans__upper{
+    text-transform:uppercase;
+}
+
+.sc-text-trans__lower{
+    text-transform:lowercase;
+}
+
+.sc-text-trans__sentence{
+    text-transform:inherit;
+}
+
+
+
+//Icon Colour Classes
+
+.sc-ico-color{
+    color:$sc-text-color;
+    
+}
+
+.sc-ico-color__primary{
+    color:$sc-text-color__primary;
+}
+
+.sc-ico-color__secondary{
+    color:$sc-text-color__secondary;
+}
+
+.sc-ico-color__tertiary{
+    color:$sc-text-color__tertiary;
+}
+
+.sc-ico-color__quaternary{
+    color:$sc-text-color__quaternary;
+}
+
+.sc-ico-color__quinary{
+    color:$sc-text-color__quinary;
+}
+
+
+//Btn Colour Classes
+
+.sc-btn-bg-color{
+    background-color:$sc_btn-bg-color !important;
+    
+}
+
+.sc-btn-bg__primary{
+    background-color:$sc_btn-bg-color__primary !important;
+}
+
+.sc-btn-bg__secondary{
+    background-color:$sc_btn-bg-color__secondary !important;
+}
+
+.sc-btn-bg__tertiary{
+    background-color:$sc_btn-bg-color__tertiary !important;
+}
+
+.sc-btn-bg__quaternary{
+    background-color:$sc_btn-bg-color__quaternary !important;
+}
+
+
+
+
+//Line height
+
+.sc-txt-lh-1{
+    line-height:1;
+}
+
+.sc-txt-lh-1nh{
+    line-height:1.5;
+}
+
+.sc-txt-lh-2{
+    line-height:2;
+}
+
+
+//Text allign
+
+.sc-txt-algn-l{
+    text-align:left;
+}
+
+.sc-txt-algn-r{
+    text-align:right;
+}
+
+.sc-txt-algn-c{
+    text-align:center;
+}
+
+//Mat Icon
+
+.sc-icn-small{
+    font-size:1rem;
+}
+
+.sc-icn-medium{
+    font-size:1.5rem;
+}
+
+.sc-icn-large{
+    font-size:2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,189 @@
+﻿@import "../abstract/colors";
+
+
+$base-text-color: #000;
+$color-base: $base-text-color;
+
+$light: lighten($color-base,60%);
+$lighter: lighten($color-base,30%);
+$dark: darken($color-base,15%);
+$darker: darken($color-base,87%);
+
+//Font Family..............................................
+
+$font-poppins: 'Poppins', sans-serif;
+
+//Font Weight..............................................
+
+$sc-font-w-light: 300;
+$sc-font-w-regular: 400;
+$sc-font-w-medium: 500;
+$sc-font-w-semi-bold: 600;
+$sc-font-w-bold: 700;
+$sc-font-w-extra-bold: 800;
+$sc-font-w-black: 900;
+
+//General Colours..............................................
+
+$sc-color__white:$sc_color_white !default;
+$sc-color__red:$red-500;
+$sc-color__pink:$pink-500;
+$sc-color__blue:$blue-500;
+$sc-color__light-blue:$light-blue-500;
+$sc-color__teal:$teal-500;
+$sc-color__yellow:$yellow-500;
+$sc-color__amber:$amber-500;
+
+
+//Bussiness Colours..............................................
+
+$sc-color:#994198 !default;
+$sc-color__primary:#ed3e84;
+$sc-color__secondary:#cbdd59;
+$sc-color__tertiary:#3d9b47;
+$sc-color__quaternary:#27bfc2 !default;
+$sc-color__quinary:#27bfc2 !default;
+
+
+//Text Colours..............................................
+
+$sc-text-color:$sc_color_white !default;
+$sc-text-color__primary:$darker !default;
+$sc-text-color__secondary:$grey-500 !default;
+$sc-text-color__tertiary:$grey-700;
+$sc-text-color__quaternary:#0C152C;
+$sc-text-color__quinary:#FCE300;
+$sc-text-color__senary:$red-500;
+
+$sc-text-color__special:#FFEB3B;
+
+
+//Icon Button Colours..............................................
+
+$sc_btn-icon-bg-color:$sc_color_white;
+$sc_btn-icon-bg-color__primary:#ED3E84;
+$sc_btn-icon-bg-color__secondary:#009688;
+$sc_btn-icon-bg-color__tertiary:#FF9800;
+$sc_btn-icon-bg-color__quaternary:#3fba74;
+
+
+//Icon Button text Colours..............................................
+
+$sc_icon-btn-text-color:$sc_color_white;
+$sc_icon-btn-text-color__primary:#ED3E84;
+$sc_icon-btn-text-color__secondary:#009688;
+$sc_icon-btn-text-color__tertiary:#f44336;
+$sc_icon-btn-text-color__quaternary:#f44336;
+$sc_icon-btn-text-color__quinary:#ED3E84;
+
+//Button Colours..............................................
+
+$sc_btn-bg-color:$sc_color_white;
+$sc_btn-bg-color__primary:#FCE300;
+$sc_btn-bg-color__secondary:#ed3e84;
+$sc_btn-bg-color__tertiary:#3fba74;
+$sc_btn-bg-color__quaternary: #E0E0E0;
+$sc_btn-bg-color__quinary: $sc_color_white;
+$sc_btn-bg-color__gradient: linear-gradient(-241deg, #2388f0 0%, #00698f 100%);
+$sc_btn-disable:#00698f;
+
+//Button text Colours..............................................
+
+$sc_btn-text-color:$sc_color_white;
+$sc_btn-text-color__primary:#006FF8;
+$sc_btn-text-color__secondary:#ED3E84;
+$sc_btn-text-color__tertiary:#009688;
+$sc_btn-text-color__quaternary:#f44336;
+$sc_btn-text-color__quinary:#ED3E84;
+
+
+//Button Border line Colors.........................................
+
+$sc-btn-border-color:$sc_color_white; 
+$sc-btn-border-color__primary:#0C152C;
+$sc-btn-border-color__secondary:#ed3e84 !default;
+$sc-btn-border-color__tertiary:#3a424d;
+$sc-btn-border-color__quaternary:#27bfc2 !default;
+$sc-btn-border-color__quinary:#27bfc2 !default;
+
+//Border line Colors.........................................
+
+$sc-border-color:$grey-200 !default;
+$sc-border-color__primary:$grey-300;
+$sc-border-color__secondary:$grey-700 !default;
+$sc-border-color__tertiary:#3a424d;
+$sc-border-color__quaternary:#27bfc2 !default;
+$sc-border-color__quinary:#f5f5f5 !default;
+
+//Link Colours..............................................
+
+$sc-link-color:#006FF8 !default;
+$sc-link-color__primary:#3a424d;
+$sc-link-color__secondary:#27bfc2 !default;
+$sc-link-color__tertiary:#3a424d;
+$sc-link-color__quaternary:#27bfc2 !default;
+$sc-link-color__quinary:#27bfc2 !default;
+
+//State Colours..............................................
+
+$sc_status_paid :#009688;
+$sc_status_pending :#FF9800;
+$sc_status_cancelled :#9E9E9E;
+
+$sc_status_confirmed :#f5766c;
+$sc_status_confirmed-multiple:#607d8b !default;
+$sc_status_provisional :#00bcd4;
+$sc_status_warning :#ff9800;
+$sc_status_tentative :#673ab7;
+$sc_status_good_availability :#2c95dc !default;
+$sc_status_few_availability :#f44336 !default;
+
+//Background Colours..............................................
+
+$sc-bg-color:$sc_color_white !default;
+$sc-bg-color__primary:$grey-50;
+$sc-bg-color__secondary:$grey-100 !default;
+$sc-bg-color__tertiary:$grey-200;
+$sc-bg-color__quaternary:#f7faff !default;
+$sc-bg-color__quinary:#FCF6F8 !default;
+$sc-bg-color__senary:#212121 !default;
+
+
+//Badge Background Colours..............................................
+
+$sc-badge-bg-color:$sc_color_white !default;
+$sc-badge-bg-color__primary:#ed3e84;
+$sc-badge-bg-color__secondary:#994198 !default;
+$sc-badge-bg-color__tertiary:$grey-200;
+$sc-badge-bg-color__quaternary:#f7faff !default;
+$sc-badge-bg-color__quinary:#FCF6F8 !default;
+
+//Badge Text Colours..............................................
+
+$sc-badge-text-color:$sc_color_white !default;
+$sc-badge-text-color__primary:#ed3e84;
+$sc-badge-bg-color__secondary:#994198 !default;
+$sc-badge-bg-color__tertiary:$grey-200;
+$sc-badge-bg-color__quaternary:#f7faff !default;
+$sc-badge-bg-color__quinary:#FCF6F8 !default;
+
+
+//Icon Colours..............................................
+
+$sc-icon-color:$sc_color_white !default;
+$sc-icon-color__primary:$grey-500;
+$sc-icon-color__secondary:$grey-700 !default;
+$sc-icon-color__tertiary:#ED3E84;
+$sc-icon-color__quaternary:#F6F9FC !default;
+$sc-icon-color__quinary:#F6F9FC !default;
+
+
+
+//shadow Colors
+
+$sc-box-shadow-color__primary:$grey-400;
+$sc-box-shadow-color__secondary:$grey-500;
+
+$sc_btn-active:#00698f;
+$sc_btn-default:#00698f;
+$sc_color_primary-blue:#00698f;

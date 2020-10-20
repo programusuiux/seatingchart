@@ -1,0 +1,601 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// Mat Button
+// -----------------------------------------------------------------------------
+
+// =================Function Sheet Buttons====================
+
+// -----Mat Button-----
+@import "../abstract/variables-new";
+@import "../abstract/mixins-new";
+
+.mat-button {
+  height: 36px;
+  font-size: 16px;
+  // line-height: 1;
+  // color:#0C152C;
+  border-radius: 0px !important;
+  // padding: 8px 12px;
+  // width: auto;
+  // border: 1px solid #0C152C;
+  // min-width: 88px !important;
+  &-small {
+    height: 23px;
+    font-size: 12px;
+    line-height: 10px !important;
+    color:#424242;
+    padding: 0 15px;
+    width: auto;
+  }
+}
+
+.mat-icon-button {
+  color: $sc_btn-disable;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% !important;
+    min-width:unset !important;
+}
+
+.mat-fab {
+  color:$sc-text-color;
+  height: 36px !important;
+  width: 36px !important;
+  border-radius:50%;
+}
+
+.mat-circle {
+  color:$sc-text-color;
+  height: 36px !important;
+  width: 36px !important;
+}
+
+.mat-fab-mini {
+  color:$sc-text-color;
+}
+
+/*.mat-button-wrapper {
+  line-height: 0px !important;
+  padding: 0px !important;
+  vertical-align: middle;
+}*/
+
+.__add{
+    height: 29px !important;
+    width: 40px !important;
+    border-radius: 5px !important;
+    border: 1px solid #ffffff !important;
+    color: #ffffff;
+}
+
+.__toggle-group{
+  height: 36px;
+}
+
+.sc{
+    &_mat-chip{
+        color:#ffffff !important;
+        border-radius:5px !important;
+        min-height:24px !important;
+        font-size:11px;
+
+        &-icon{
+            margin-left:8px;
+            color:#ffffff !important;
+            opacity:1 !important;
+            
+        }
+        &--assign{
+            // background-color:$completed !important;
+        }
+
+        &--search{
+            // background-color:$sc_background-color-gray !important;
+        }
+
+
+    }
+
+    
+
+    &_mat-btn {
+
+  // ----Primary Button-----
+
+  &__primary {
+    @extend .mat-button;
+    color:  #0C152C  !important;
+    text-align: center !important;
+    border: 1px solid #0C152C !important;
+    transition: 0.3s !important;
+    background-color: #FCE300;
+    line-height: inherit !important;
+    &:active {
+      @include box_shadow(2);
+      border: none !important;
+      color: #ffffff !important;
+      background-color: $sc_btn-active;
+    }
+
+    &:hover {
+      @include box_shadow(1);
+      background-color: #fff;
+      color: #0C152C !important;
+      border: 1px solid #0C152C !important;
+      text-align: center !important;
+    }
+
+    &--active {
+      @extend .mat-button;
+      background-color: $sc_btn-active;
+      color: #ffffff !important;
+      &:hover {
+        @include box_shadow(2);
+      }
+    }
+
+    &--disabled {
+      @extend .mat-button;
+      background-color: $sc_btn-disable;
+      &:active {
+        @include box_shadow(2);
+      }
+
+      &:hover {
+        @include box_shadow(1);
+      }
+    }
+    &-small{
+      @extend .mat-button-small;
+      transition: 0.3s !important;
+      background-color: $sc_btn-default;
+
+      &:active {
+        @include box_shadow(2);
+      }
+
+      &:hover {
+        @include box_shadow(1);
+        background-color: $sc_btn-active;
+        color: #ffffff !important;
+        border: 1px solid $sc_btn-active !important;
+        text-align: center !important;
+      }
+      &--active{
+        @extend .mat-button-small;
+        @extend .sc_mat-btn__primary--active;
+        background-color: $sc_btn-active;
+      }
+      &--disabled{
+        @extend .mat-button-small;
+        @extend .sc_mat-btn__primary--disabled;
+        background-color: $sc_btn-disable;
+      }
+    }
+  }
+
+  // ----- Blue Button--------
+  &__blue {
+    @extend .mat-button;
+    border: 1px solid $sc_color_primary-blue !important;
+    background-color: $sc_btn-default;
+    color: $sc_color_primary-blue;
+
+    &:active {
+      @include box_shadow(2);
+      border: none !important;
+      color: #ffffff !important;
+      background-color: $sc_btn-active;
+    }
+
+    &:hover {
+      @include box_shadow(1);
+      border: none !important;
+      transition: 0.3s !important;
+      color: #ffffff !important;
+      background-color: $sc_btn-active;
+    }
+
+    &--active {
+      @extend .mat-button;
+      background-color: $sc_btn-active;
+      color: #ffffff !important;
+      &:hover {
+        @include box_shadow(2);
+      }
+    }
+
+    &--disabled {
+      @extend .mat-button;
+      background-color: $sc_btn-disable;
+      &:active {
+        @include box_shadow(2);
+      }
+
+      &:hover {
+        @include box_shadow(1);
+      }
+    }
+    &-small{
+      @extend .mat-button-small;
+      background-color: $sc_btn-default;
+
+      &:active {
+        @include box_shadow(2);
+      }
+
+      &:hover {
+        @include box_shadow(1);
+      }
+      &--active{
+        @extend .mat-button-small;
+        @extend .sc_mat-btn__primary--active;
+        background-color: $sc_btn-active;
+      }
+      &--disabled{
+        @extend .mat-button-small;
+        @extend .sc_mat-btn__primary--disabled;
+        background-color: $sc_btn-disable;
+      }
+    }
+  }
+  // ----Secondary Button-----
+
+  &__secondary {
+    @extend .mat-button;
+    color: #91a0ad !important;
+    text-align: center !important;
+    border: 1px solid #91a0ad !important;
+    transition: 0.3s !important;
+    background-color: #ffffff;
+    line-height: inherit !important;
+    &:active {
+      @include box_shadow(2);
+      border: none !important;
+      color: #ffffff !important;
+      background-color: $sc_btn-bg-color__secondary;
+    }
+
+    &:hover {
+      @include box_shadow(1);
+      background-color: $sc_btn-bg-color__secondary;
+      color: #ffffff !important;
+      border: 1px solid $sc_btn-bg-color__secondary !important;
+      text-align: center !important;
+    }
+
+    &--active {
+      background-color: $sc_btn-bg-color__secondary;
+      &:hover {
+        @include box_shadow(2);
+      }
+    }
+
+    &--disabled {
+      background-color: $sc_btn-disable;
+      &:active {
+        // @include box_shadow(2);
+      }
+
+      &:hover {
+        // @include box_shadow(1);
+      }
+    }
+
+    &-small{
+      @extend .mat-button-small;
+      transition: 0.3s !important;
+      background-color: #ffffff;
+      &:active {
+        @include box_shadow(2);
+      }
+
+      &:hover {
+        @include box_shadow(1);
+        color:#fff;
+        background-color:$sc_btn-bg-color__secondary;
+      }
+      &--active{
+        @extend .mat-button-small;
+        @extend .sc_mat-btn__secondary--active;
+      }
+      &--disabled{
+        @extend .mat-button-small;
+        @extend .sc_mat-btn__secondary--disabled;
+      }
+    }
+  }
+
+    // ----Rounded Button-----
+
+    &__rounded {
+      @extend .mat-button;
+      border-radius: 15px!important;
+      background-color: $sc_btn-bg-color__secondary;
+      &:active {
+        @include box_shadow(2);
+      }
+
+      &:hover {
+        @include box_shadow(1);
+      }
+
+      &--active {
+        @extend .mat-button;
+        border-radius: 15px!important;
+        background-color: $sc_btn-bg-color__secondary;
+
+        &:hover {
+          @include box_shadow(2);
+        }
+      }
+
+      &--disabled {
+        @extend .mat-button;
+        border-radius: 15px!important;
+        background-color: $sc_btn-disable;
+        &:active {
+          // @include box_shadow(2);
+        }
+
+        &:hover {
+          // @include box_shadow(1);
+        }
+      }
+
+      &-small{
+        @extend .mat-button-small;
+        border-radius: 10px!important;
+        background-color: $sc_btn-default;
+        &--active{
+          @extend .mat-button-small;
+          @extend .sc_mat-btn__rounded--active;
+          border-radius: 10px!important;
+          background-color: $sc_btn-bg-color__secondary
+        }
+        &--disabled{
+          @extend .mat-button-small;
+          @extend .sc_mat-btn__rounded--disabled;
+          border-radius: 10px!important;
+          background-color: $sc_btn-bg-color__secondary
+        }
+      }
+    }
+
+    // ----Circle Button-----
+
+     &__circle{
+    @extend .mat-button-wrapper;
+    @extend .mat-circle;
+    /*background-color: $sc_btn-active;*/
+    &:active {
+      @include box_shadow(2);
+    }
+
+    &:hover {
+      @include box_shadow(1);
+    }
+
+    &--active {
+      @extend .mat-fab;
+      @extend .mat-button-wrapper;
+      background-color: $sc_btn-bg-color__secondary !important;
+
+      &:hover {
+        @include box_shadow(2);
+      }
+    }
+
+    &--disabled {
+      @extend .mat-fab;
+      @extend .mat-button-wrapper;
+      background-color: $sc_btn-bg-color__secondary !important;
+      &:active {
+        // @include box_shadow(2);
+      }
+
+      &:hover {
+        // @include box_shadow(1);
+      }
+    }
+
+  }
+
+// ----Toggle Button-----
+
+&__toggle-group {
+  @extend .__toggle-group;
+  line-height: 36px;
+  border-radius: 2px!important;
+  // background-color: $sc_btn-bg-color__secondary
+  &:active {
+    @include box_shadow(2);
+  }
+
+  &:hover {
+    @include box_shadow(1);
+  } 
+  .mat-button-toggle-label-content{
+    line-height: 0px !important;
+    padding: 0 16px;
+  }
+}
+
+
+  // ----Icon Button-----
+
+  &-icon {
+    // background-color: $sc_btn-bg-color__secondary;
+    &:active {
+      @include box_shadow(2);
+    }
+
+    &:hover {
+      @include box_shadow(1);
+    }
+
+    &--active {
+      // background-color: $sc_btn-bg-color__secondary;
+      &:hover {
+        @include box_shadow(2);
+      }
+    }
+
+    &--disabled {
+      // background-color: $sc_btn-disable;
+      &:active {
+        // @include box_shadow(2);
+      }
+
+      &:hover {
+        // @include box_shadow(1);
+      }
+    }
+  }
+
+  // Number button
+  &-count {
+      @extend .mat-button;
+     border: .1rem solid $sc-btn-border-color__primary !important;
+     min-width:unset !important;
+    .mat-button-wrapper {
+      display: flex !important;
+      align-items: center;
+    }
+    .sc-btn-count-value {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // background-color: $partially_completed;
+      color: #fff;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      line-height: 1px;
+      margin-left: 1rem;
+    }
+  }
+
+  // -------Fab Icon Button------------
+
+  &__fab{
+    @extend .mat-button-wrapper;
+    @extend .mat-fab;
+    background-color: $sc_btn-active;
+    &:active {
+      @include box_shadow(2);
+    }
+
+    &:hover {
+      @include box_shadow(1);
+    }
+
+    &--active {
+      @extend .mat-fab;
+      @extend .mat-button-wrapper;
+      background-color: $sc_btn-bg-color__secondary !important;
+
+      &:hover {
+        @include box_shadow(2);
+      }
+    }
+
+    &--disabled {
+      @extend .mat-fab;
+      @extend .mat-button-wrapper;
+      background-color: $sc_btn-bg-color__secondary !important;
+      &:active {
+        // @include box_shadow(2);
+      }
+
+      &:hover {
+        // @include box_shadow(1);
+      }
+    }
+
+  }
+
+   // -------Fab Mini Icon Button------------
+
+  &__mini-fab{
+    @extend .mat-fab-mini;
+    background-color: $sc_btn-default !important;
+    &:active {
+      @include box_shadow(2);
+    }
+
+    &:hover {
+      @include box_shadow(1);
+    }
+
+    &--active {
+      @extend .mat-fab-mini;
+      background-color: $sc_btn-default !important;
+
+      &:hover {
+        @include box_shadow(2);
+      }
+    }
+
+    &--disabled {
+      @extend .mat-fab-mini;
+      background-color: $sc_btn-disable !important;
+      &:active {
+        // @include box_shadow(2);
+      }
+
+      &:hover {
+        // @include box_shadow(1);
+      }
+    }
+
+  }
+
+ // ------- Add Button------------
+
+  &__add {
+    @extend .mat-button;
+    @extend .__add;
+    @extend .mat-button-wrapper;
+    .mat-button-wrapper{
+      display: block;
+    }
+    background-color: $sc_btn-active;
+    &:active {
+      @include box_shadow(2);
+    }
+
+    &:hover {
+      @include box_shadow(1);
+    }
+
+    &--active {
+      @extend .mat-button;
+    @extend .__add;
+      background-color: $sc_btn-default;
+      &:hover {
+        @include box_shadow(2);
+      }
+    }
+
+    &--disabled {
+      @extend .mat-button;
+    @extend .__add;
+      background-color: $sc_btn-disable;
+      &:active {
+        // @include box_shadow(2);
+      }
+
+      &:hover {
+        // @include box_shadow(1);
+      }
+    }
+  }
+}
+    }
+
+

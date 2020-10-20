@@ -1,0 +1,48 @@
+.owl-carousel{
+    position: relative;
+
+    .owl-stage-outer{
+        height: 384px;
+
+        .owl-item{
+            object-fit: cover;
+
+            >img{
+                background: linear-gradient(to left, rgba(12, 21, 44, 0.9), rgba(92, 98, 114, 0)), url(../../image/carousel.jpg);
+                background-repeat: no-repeat;
+                object-fit: cover;
+                background-position: 50% 60%;
+            }
+        }
+
+       
+    }
+    .owl-dots{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .owl-nav{
+        flex-direction: row;
+        display: flex;
+        position: absolute;
+        margin-top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        
+
+        .owl-prev, .owl-next{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 !important;
+            padding: 20px !important;
+            border-radius: 0 !important;
+            background-color: #0C152C !important;
+        }
+    }
+}
+

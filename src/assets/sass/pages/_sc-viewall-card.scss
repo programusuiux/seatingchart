@@ -1,0 +1,7 @@
+.sc_viewall--card{
+    height: 347px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(252, 227, 0, 0.85), rgba(12, 21, 44, 1)), url("~src/assets/image/view-all.jpg");
+    @include box_shadow (1);
+    
+}

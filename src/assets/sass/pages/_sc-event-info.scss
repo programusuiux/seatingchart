@@ -1,0 +1,88 @@
+.sc-event-info{
+    &-wrapper{
+        .sc-event-info-video{
+            margin: 48px -15px;
+
+            .owl-carousel .owl-stage-outer {
+                height: 375px;
+
+                .owl-item{
+                    object-fit: cover;
+        
+                    >img{
+                        background: url(../../image/info-banner.jpg);
+                        background-repeat: no-repeat;
+                        object-fit: cover;
+                        background-position: 50% 160%;
+                    }
+                }
+            }
+            
+        }
+
+        .sc-event-cast{
+            position: relative;
+
+            &-title{
+                top: 0px;
+                position: absolute;
+            }
+
+            &-slider{
+                .ng-image-slider{
+                    height: 260px !important;
+                    .ng-image-slider-container{
+                        position: relative;
+                        
+                        .main-inner{
+                            padding-top: 48px !important;
+                            .img-div{
+                                .image{
+                                    border-radius: 0px !important;
+                                    object-fit: cover;
+                                }
+    
+                                .caption{
+                                    height: 66px;
+                                    background: rgba(0, 0, 0, 0.82) !important;
+                                    border-radius: 0px !important;
+                                }
+                            }
+                        }
+    
+                        .main{
+                            height: 260px !important;
+                            .prev{
+                                background-color: #0C152C !important;
+                                color: #fff !important;
+                                border: 1px solid #fff !important;  
+                                right: 50px !important;                          
+                                left: auto !important;
+                                top: 0 !important;
+                                margin-top: 0 !important;
+                                @include box_shadow (1);
+                        } 
+                        .next{
+                            background-color: #0C152C !important;
+                            color: #fff !important;
+                            border: 1px solid #fff !important;
+                            top: 0 !important;
+                            margin-top: 0 !important;
+                            @include box_shadow (1);
+                    } 
+    
+                    .disable{
+                        background-color: #fff !important;
+                        color: #0C152C !important;
+                        opacity: 0.5 !important;
+                        border: 1px solid #0C152C !important;
+                    }
+                        }
+                    }
+                }
+              
+            }
+        }
+    }
+    
+}
