@@ -10,6 +10,10 @@ import { ScEventCategoryListComponent } from './sc-event-category-list/sc-event-
 import { ScNavbarPrimaryComponent } from './sc-navbar-primary/sc-navbar-primary.component';
 import { ScEventInfoComponent } from './sc-event-info/sc-event-info.component';
 import { ScEventListComponent } from './sc-event-list/sc-event-list.component';
+import { ScPackageCardComponent } from './sc-package-card/sc-package-card.component';
+import { ScHeaderInnerComponent } from './sc-header-inner/sc-header-inner.component';
+import { ScPackageTicketingCardComponent } from './sc-package-ticketing-card/sc-package-ticketing-card.component';
+
 
 const routes: Routes = [
   {path:"scfooterprimary", component:ScFooterPrimaryComponent},
@@ -21,7 +25,10 @@ const routes: Routes = [
   {path:"sceventcategorylist", component:ScEventCategoryListComponent},
   {path:"scnavbarprimary", component:ScNavbarPrimaryComponent},
   {path:"sceventinfo", component:ScEventInfoComponent},
-  {path:"sceventlist", component:ScEventListComponent}
+  {path:"sceventlist", component:ScEventListComponent},
+  {path:"packagecard", component:ScPackageCardComponent},
+  {path:"headerinner", component:ScHeaderInnerComponent},
+  {path:"packageticketing", component:ScPackageTicketingCardComponent}
 ];
 
 @NgModule({

@@ -20,6 +20,11 @@ import { ScNavbarPrimaryComponent } from './sc-navbar-primary/sc-navbar-primary.
 import { ScEventInfoComponent } from './sc-event-info/sc-event-info.component';
 import { ScEventListComponent } from './sc-event-list/sc-event-list.component';
 import { ScViewallCardComponent } from './sc-viewall-card/sc-viewall-card.component';
+import { ScPackageCardComponent } from './sc-package-card/sc-package-card.component';
+import { ScHeaderInnerComponent } from './sc-header-inner/sc-header-inner.component';
+import { ScPackageTicketingCardComponent } from './sc-package-ticketing-card/sc-package-ticketing-card.component';
+import { ScCounterComponent } from './sc-counter/sc-counter.component';
+import { ScPackageSelectionCoursesComponent } from './sc-package-selection-courses/sc-package-selection-courses.component';
 
 
 @NgModule({
@@ -37,6 +42,11 @@ import { ScViewallCardComponent } from './sc-viewall-card/sc-viewall-card.compon
     ScEventInfoComponent,
     ScEventListComponent,
     ScViewallCardComponent,
+    ScPackageCardComponent,
+    ScHeaderInnerComponent,
+    ScPackageTicketingCardComponent,
+    ScCounterComponent,
+    ScPackageSelectionCoursesComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,7 +9,7 @@
 //@charset 'UTF-8';
 
 // 1. Configuration and helpers
-@import "abstract/variables-new", "abstract/functions", "abstract/mixins-new";
+@import "abstract/variables-new", "abstract/functions", "abstract/mixins-new", "abstract/misc";
 
 // 2. Vendors
 @import "./vendor/normalize";
@@ -23,6 +23,9 @@
 
 // 5. Components
 @import "./components/buttons";
+@import "./components/sc-package-card";
+@import "./components/sc-header-inner";
+@import "./components/sc-package-ticketing-card";
 
 // 6. Page-specific styles
 @import "./pages/sc-event-info";

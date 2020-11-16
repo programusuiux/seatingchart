@@ -137,7 +137,8 @@
 .sc__flex {
   &-container {
     @include flexbox();
-
+    width: 100%;
+    
     &.fwrap{
         @include flex-wrap(wrap);
         width:100%;
@@ -168,12 +169,30 @@
       justify-content: center;
     }
 
+    &--hend {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &--hstart {
+      display: flex;
+      justify-content: flex-start;
+    }
+
     &--fend {
       justify-content:flex-end;
     }
 
     &--fstart {
       justify-content:flex-start;
+    }
+
+    &--sstart {
+      align-self: flex-start;
+    }
+
+    &--send {
+      align-self: flex-end;
     }
 
     &.fdcol{
