@@ -25,6 +25,7 @@ import { ScHeaderInnerComponent } from './sc-header-inner/sc-header-inner.compon
 import { ScPackageTicketingCardComponent } from './sc-package-ticketing-card/sc-package-ticketing-card.component';
 import { ScCounterComponent } from './sc-counter/sc-counter.component';
 import { ScPackageSelectionCoursesComponent } from './sc-package-selection-courses/sc-package-selection-courses.component';
+import { ScSearchSecondaryComponent } from './sc-search-secondary/sc-search-secondary.component';
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import { ScPackageSelectionCoursesComponent } from './sc-package-selection-cours
     ScPackageTicketingCardComponent,
     ScCounterComponent,
     ScPackageSelectionCoursesComponent,
+    ScSearchSecondaryComponent,
   ],
   imports: [
     BrowserModule,

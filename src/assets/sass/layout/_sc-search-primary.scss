@@ -92,3 +92,20 @@
        
     }
 }
+
+.sc_search-secondary{
+    .mat-form-field{
+        width: 100%;
+    }
+    .mat-form-field-appearance-fill .mat-form-field-flex {
+        background-color: #fff;
+        border-radius: 0;
+        height: 48px;
+        @include box_shadow (1);
+    }
+    
+    .mat-form-field-underline{
+        display: none !important;
+    }
+}
+
