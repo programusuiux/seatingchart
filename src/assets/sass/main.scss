@@ -16,7 +16,7 @@
 @import "./vendor/bootstrap-v4/scss/bootstrap.scss";
 
 // 3. Base stuff
-@import "./base/flex", "./base/fonts", "./base/typography-new", "./base/helpers";
+@import "./base/flex", "./base/fonts", "./base/typography-new";
 
 // 4. Layout-related sections
 @import "./layout/header", "./layout/footer", "./layout/sc-search-primary", "./layout/sc-owl-carousel", "./layout/sc-navbar" ;
@@ -34,7 +34,7 @@
 @import "./pages/sc-event-category-list";
 @import "./pages/sc-viewall-card";
 @import "./pages/sc-package-selection-courses";
-
+@import "./pages/sc-modal";
 // 7. Theme
 
 

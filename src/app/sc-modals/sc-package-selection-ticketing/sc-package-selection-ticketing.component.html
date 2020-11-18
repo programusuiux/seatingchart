@@ -1,0 +1,45 @@
+<!---------------Modal Questions---------------->
+
+<div class="sc-modal sc-modal-package-selection-ticketing">
+    <div class="sc-modal-header sc__flex-container">
+        <div class="sc__flex-item--inherit ">
+            <div class="sc-modal-icon sc__flex-item--vcenter">
+                <i class="icon-list"></i>
+            </div>
+        </div>
+        <div class="sc__flex-item sc__flex-item--vcenter">
+            <div class="sc-modal-header-title">
+                <div class="sc-txt-h3_small">Select Packages</div>
+                <!-- <div class="sc-txt-b1">Facility:Grand Ballroom</div> -->
+            </div>
+        </div>
+        <div class="sc__flex-item--inherit sc__flex-item--vcenter">
+            <div class="sc-modal-action-icons">
+                <button mat-icon-button [mat-dialog-close]="true"><i class="material-icons sc-ico-color__primary">close</i></button>
+            </div>
+        </div>
+    </div>
+    
+    <!---------------Modal Questions Expansion Row---------------->
+    
+    <div class="sc-modal-body sc-modal-package-selection-ticketing-body">
+        <app-sc-package-ticketing-card></app-sc-package-ticketing-card>
+
+        <div class="sc-modal-package-selection-ticketing-footer mt-4">
+            <div class="sc__flex-item sc__flex-item--vcenter sc_package--card_function sc__flex-item--hend">
+                <div class="sc__flex-container fdcol sc_package--card_function--wrapper">
+                    <div class="sc__flex-item sc-txt-algn-r mb-3">
+                        <div class="title sc-txt-s1 sc-text-regular">Total</div>
+                        <div class="title sc-txt-h2 sc-text-semi-bold">$500.00</div>
+                    </div>
+            
+                    <div class="sc__flex-item btn-wrapper sc__flex-item--hend ">
+                        <button class="sc_mat-btn__primary" mat-button>Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+

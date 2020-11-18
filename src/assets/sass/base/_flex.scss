@@ -146,6 +146,13 @@
 
     &.fdcol{
       flex-direction: column;
+    }
+      &.fdcol-mobile{
+
+        @include media-breakpoint-down(sm) { flex-direction: column !important; }
+        @include media-breakpoint-down(md) { flex-direction: column !important; }
+        // @include media-breakpoint-down(lg) { flex-direction: column !important; }
+        
   }
     &.space-between {
       justify-content: space-between !important;

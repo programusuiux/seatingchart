@@ -26,6 +26,10 @@ import { ScPackageTicketingCardComponent } from './sc-package-ticketing-card/sc-
 import { ScCounterComponent } from './sc-counter/sc-counter.component';
 import { ScPackageSelectionCoursesComponent } from './sc-package-selection-courses/sc-package-selection-courses.component';
 import { ScSearchSecondaryComponent } from './sc-search-secondary/sc-search-secondary.component';
+import { ScPackageInformationComponent } from './sc-package-information/sc-package-information.component';
+import { ScModalsComponent } from './sc-modals/sc-modals.component';
+import { ScPackageSelectionTicketingComponent } from './sc-modals/sc-package-selection-ticketing/sc-package-selection-ticketing.component';
+
 
 
 @NgModule({
@@ -49,6 +53,10 @@ import { ScSearchSecondaryComponent } from './sc-search-secondary/sc-search-seco
     ScCounterComponent,
     ScPackageSelectionCoursesComponent,
     ScSearchSecondaryComponent,
+    ScPackageInformationComponent,
+    ScModalsComponent,
+    ScPackageSelectionTicketingComponent,
+
   ],
   imports: [
     BrowserModule,
